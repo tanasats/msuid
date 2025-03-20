@@ -2,7 +2,6 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import React, { FormEvent, useState } from 'react'
-import { LuFingerprint } from 'react-icons/lu';
 import { msu_auth } from '../actions/auth-action';
 import { useSession } from '../context/sessioncontext';
 import { toast } from 'sonner';
@@ -10,6 +9,7 @@ import { EyeIcon, EyeOffIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { insertUser } from '../actions/user-action';
+import { BsCpu } from 'react-icons/bs';
 
 
 const SignIn = () => {
@@ -53,7 +53,7 @@ const SignIn = () => {
 
     return (
 
-        <div className='w-full bg-[url("/signin-bg.png")] bg-cover bg-center'>
+        <div className='w-full bg-[url("/10.jpg")] bg-cover bg-center'>
             <div className='absolute opacity-30 right-[24px]'>
                 <Image src='/msu_logo_white.png' width={200} height={200} alt='' />
             </div>
@@ -66,10 +66,10 @@ const SignIn = () => {
                     <div className="w-[300px] bg-gray-50 flex flex-col text-center p-4 rounded-lg shadow-2xl gap-4">
                         <div className='flex items-center gap-5'>
                             <div className='w-16 h-16 bg-primary flex items-center justify-center rounded-full'>
-                                <LuFingerprint className='w-10 h-10 text-white' />
+                                <BsCpu className='w-10 h-10 text-white' />
                             </div>
-                            <div className='text-5xl font-bold'>
-                                MyID
+                            <div className='text-4xl font-bold'>
+                                MSU Data
                             </div>
                         </div>
 

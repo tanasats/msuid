@@ -1,7 +1,8 @@
 "use client"
 import { useSession } from '@/app/context/sessioncontext'
 import React, { useEffect } from 'react'
-import { LuFingerprint, LuLogOut } from 'react-icons/lu'
+import { BsCpu } from 'react-icons/bs'
+import { LuLogOut } from 'react-icons/lu'
 
 const Header = () => {
   const { user,logout } = useSession()
@@ -15,11 +16,11 @@ const Header = () => {
 
         <div className='flex items-center gap-4'>
           <div className='flex items-center justify-center bg-primary w-16 h-16 rounded-full'>
-            <LuFingerprint className='h-12 w-12 text-white' />
+            <BsCpu className='h-12 w-12 text-white' />
           </div>
           <div>
-            <div className='text-base md:text-2xl'>ระบบจัดการลายเซ็นดิจิทัล</div>
-            <div className='text-sm md:text-base'>Digital Signature</div>
+            <div className='text-base md:text-2xl'>ระบบตรวจสอบข้อมูล</div>
+            <div className='text-sm md:text-base'>Data Checking</div>
           </div>
         </div>
         <div className='flex items-center gap-4'>
